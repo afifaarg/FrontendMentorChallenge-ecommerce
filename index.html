@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- fonts files 👍 -->
+  <script src="https://kit.fontawesome.com/8983704702.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- linking stylesheet file  -->
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="sneackers"> <img src="./images/logo.svg" alt="logo"> </div>
+
+      <div class="menu">
+        <div class="col"><a href="#">Collections</a>  </div>
+        <div class="men"><a href="#"> Men</a>  </div>
+        <div class="women"> <a href="#">Women</a> </div>
+        <div class="abt"><a href="#">About</a></div>
+        <div class="cont"> <a href="#">Contact</a> </div>
+     </div>
+  
+     
+      <div class="font"> 
+        <button onclick="ShowCart()"> <img src="./images/icon-cart.svg" alt="cart"> </button>
+        <div class="cart" id="cart">
+          <div class="h"> Cart </div>  
+          <div id="cartEmpty"> Your cart is empty. </div>
+          <div id="cartFilled">
+           <div class="thumb"> <img src="./images/image-product-1-thumbnail.jpg" alt=""> </div>
+          <div class="details">
+            <p> Fall Limited Edition Sneakers </p>
+          
+          <div class="price-group">
+            <div id="Qte"> </div>
+            <div id="finalPrice"> </div>
+          </div>  
+          </div>
+             
+          <button onclick="deleteFromCart()"> <div class="delete"><img src="./images/icon-delete.svg" alt=""> </div> </button>
+           </div>  
+          </div>
+          <span class="num" id="not"> </span> 
+      </div>
+     
+     
+       <div class="prof"> <img src="./images/image-avatar.png" alt="Profile picture"></div>
+       
+       
+    </div>
+
+    
+
+
+
+<div class="main">
+  <div class="pics">
+  
+    <img class="main-pic" id="main-pic" src="./images/image-product-1.jpg" alt=""  > 
+      <div class="second-pics">
+        <button > <div class="pic active" id="one" > <img src="./images/image-product-1-thumbnail.jpg" alt=""></div></button>
+         <button> <div class="pic" id="two"> <img src="./images/image-product-2-thumbnail.jpg" alt=""></div> </button>
+          <button > <div class="pic" id="three"><img src="./images/image-product-3-thumbnail.jpg" alt=""> </div> </button>
+            <button> <div class="pic" id="four"><img src="./images/image-product-4-thumbnail.jpg" alt=""></div> </button>
+    </div>
+</div>
+
+  <div class="lightBox"> 
+      <div class="pics-scroll">
+        
+          <div class="close">
+            <img src="./images/icon-close.svg" alt="">
+          </div>
+
+          <img class="main-pic-scrollPic" src="./images/image-product-1.jpg" alt=""> 
+
+          <div class="previous arrow">
+            <img src="./images/icon-previous.svg" alt="prev"  >
+          </div>
+
+          <div class="next arrow">
+            <img src="./images/icon-next.svg" alt="next"  >
+          </div>
+         
+          <div class="second-pics-scroll">
+           <div class="pic-scroll  active"> <img src="./images/image-product-1-thumbnail.jpg" alt="thumb-1"></div>
+           <div class="pic-scroll "> <img src="./images/image-product-2-thumbnail.jpg" alt="thumb-2"></div>
+           <div class="pic-scroll "><img src="./images/image-product-3-thumbnail.jpg" alt="thumb-3"> </div>
+           <div class="pic-scroll "><img src="./images/image-product-4-thumbnail.jpg" alt="thumb-4"></div>
+        </div>
+
+     </div>
+   
+</div> 
+
+  <div class="infos">
+    <div class="text">
+      <h2> Sneaker Company </h2>
+      <h1>Fall Limited Edition Sneakers</h1>
+     <p>
+       These low-profile sneakers are your perfect
+        casual wear companion. Featuring a 
+       durable rubber outer sole, they’ll withstand everything the weather can offer.
+    </p> 
+   </div>
+
+   <div class="price">
+    <div class="prix">
+      <h2> $125.00 </h2>
+      <h3> $250.00 </h3>
+    </div>
+ <div class="disc"> 50%</div>
+</div>
+    
+   
+<div class="last">
+   <div class="buttons">
+   
+		<button onclick="Increase()"><img src="./images/icon-plus.svg" alt=""></button>
+    	<div id="Number" class="item">0</div>
+    <button onclick="Decrease()"><img src="./images/icon-minus.svg" alt=""></button>
+
+	</div>
+  <button  id ="add" onclick="ADD()"> Add to cart </button>
+</div>
+
+</div>
+</div>
+
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">AFIFA</a>.
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
